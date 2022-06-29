@@ -1,0 +1,38 @@
+{
+  "name": "craft-core",
+  "version": "1.0.0",
+  "description": "Laughing Web Port using Next.js, Chakra UI, Framer Motion and Three.js  4 @martogramer",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martogramer/craftCore.git"
+  },
+  "keywords": [],
+  "author": "martogramer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Martogramer/craftCore/issues"
+  },
+  "homepage": "https://github.com/Martogramer/craftCore#readme",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.2",
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "framer-motion": "^6.3.16",
+    "next": "^12.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-next": "^12.1.6",
+    "prettier": "^2.7.1"
+  }
+}
