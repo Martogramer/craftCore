@@ -29,7 +29,7 @@ const Logo = () => {
                 fontFamily='M PLUS Rouned 1c'
                 fontWeight="bold"
                 ml={3}>
-                    Martin Iribas
+                    @martogramer
                 </Text>
             </LogoBox>
         </a>

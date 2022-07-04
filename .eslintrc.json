@@ -1,6 +1,6 @@
 {
     "root": true,
-    "extends": "next",
+    "extends": ["next", "next/babel", "next/core-web-vitals"],
     "rules": {
         "no-unused-vars": [
             "error",
@@ -8,6 +8,7 @@
                 "argsIgnorePattern": "^_",
                 "varsIgnorePattern": "^_"
             }
-        ]
+        ],
+        "react/display-name": 0
     }
 }
