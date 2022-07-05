@@ -1,4 +1,3 @@
-
 const options = {
     arrowParens: 'avoid',
     singleQuote: true,

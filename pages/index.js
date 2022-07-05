@@ -1,67 +1,79 @@
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
-import { 
+import {
+    Link,
+    Container,
+    Heading,
+    Box,
+    SimpleGrid,
     Button,
-    Container, 
-    Box, 
-    Heading, 
-    Image, 
-    useColorModeValue, 
-    Link
+    List,
+    ListItem,
+    Image,
+    useColorModeValue,
+    chakra
 } from '@chakra-ui/react'
+import { BioSection, BioYear } from '../components/bio'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
-
 const Page = () => {
     return (
-        <Layout>
         <Container>
-            <Box 
-            borderRadius="lg" 
-            bg={useColorModeValue('whiteAlpha.800', 'whiteAlpha.200')} p={3} mb={6} 
-            align="center" 
-            >
-                Hello, I&apos;m a full-stack developer based in Argentina!
+            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
+                Buenas, soy un full-stack developer based in Arg!
             </Box>
-            <Box display={{ md: 'flex'}}>
-                <Box flexGrow={1}>
-                    <Heading as="h2" vriant="page-title">
-                        Martin Iribas
+            <Box display={{ md: 'flex' }}>
+                <Box floxGrow={1}>
+                    <Heading as="h2" variant="page-title">
+                        Aquí Tu Header Sakatuka !
                     </Heading>
-                    <p>Digital Craftzman ( Artist / Developer / Designer )</p>
+                    <p> Artesano Digital ( developer / designer / entrepeneur )</p>
                 </Box>
-            <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align="center">
-                <Image 
-                borderColor="whiteAlpha.800" 
-                borderWidth={2} 
-                borderStyle="solid" 
-                maxWidth="100px" 
-                display="inline-block" 
-                borderRadius="full" 
-                src="/images/takuya.jpeg" 
-                alt="profile image" 
-                />
-            </Box>
+                <Box
+                    flexShrink={0}
+                    mt={{ base: 4, md: 0 }}
+                    ml={{ md: 6 }}
+                    textAlign="center"
+                >
+                    <Box
+                        borderColor="whiteAlpha.800"
+                        borderWidth={2}
+                        borderStyle="solid"
+                        w="100px"
+                        h="100px"
+                        display="inline-block"
+                        borderRadius="full"
+                        overflow="hidden"
+                    >
+                        <Image
+                            src="/images/martn.jpg"
+                            alt="Profile image"
+                            borderRadius="full"
+                            width="100%"
+                            height="100%"
+                        />
+                    </Box>
+                </Box>
             </Box>
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
                     Work
                 </Heading>
                 <Paragraph>
-                    Martin es un desarrollador apasionado por las nuevas tecnologias
-                    dispuesto a actualizar sus conocimientos constantemente. Con +2 años de experiencia
-                    en la industria presenta sus proyectos y colaboraciones mas recientes.
-                    <NextLink href="/works/linkdrop">
+                    
+                    <NextLink href="/works/inkdrop" passHref scroll={false}>
                         <Link>Inkdrop</Link>
                     </NextLink>
-                        .
+                    . He publishes content for marketing his products and his
+                    channel called 
+                    <NextLink href="" passHref>
+                        <Link target="_blank"> telescopiens</Link>
+                    </NextLink>
                 </Paragraph>
                 <Box align="center" my={4}>
-                    <NextLink href="/works">
+                    <NextLink href="/works" passHref scroll={false}>
                         <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                            My portfolio
+                            portfolio
                         </Button>
                     </NextLink>
                 </Box>
@@ -74,35 +86,8 @@ const Page = () => {
                     <BioYear>1995</BioYear>
                     Born in Santa Fe, Arg.
                 </BioSection>
-                <BioSection>
-                    <BioYear>2010</BioYear>
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                </BioSection>
-                <BioSection>
-                <BioYear>2010</BioYear>
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                </BioSection>
-                <BioSection>
-                <BioYear>2012</BioYear>
-                Working as a freelancer
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                </BioSection>
-                <BioSection>
-                <BioYear>2018</BioYear>
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                </BioSection>
-                <BioSection>
-                <BioYear>2020 to present</BioYear>
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                lorem ipsum dolor sit amet, consectetur adip lorem impsum, sed diam
-                </BioSection>
             </Section>
         </Container>
-</Layout>
     )
 }
 export default Page

@@ -1,7 +1,7 @@
 {
   "name": "craft-core",
   "version": "1.0.0",
-  "description": "Laughing Web Port using Next.js, Chakra UI, Framer Motion and Three.js  4 @martogramer",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
@@ -23,18 +23,17 @@
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
-    "@chakra-ui/theme-tools": "^2.0.2",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "babel": "^6.23.0",
     "framer-motion": "^6.3.16",
-    "next": "^12.1.6",
+    "next": "^12.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.18.0",
-    "eslint-config-next": "^12.1.6",
+    "eslint": "^8.19.0",
+    "eslint-config-next": "^12.2.0",
     "prettier": "^2.7.1"
   }
 }
