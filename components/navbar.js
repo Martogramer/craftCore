@@ -71,9 +71,9 @@ const Navbar = props => {
                     <LinkItem href="/posts" path={path}>
                         Posts
                     </LinkItem>
-                    <LinkItem
+                    <Link
                         target="_blank"
-                        href="https://github.com/martogramer"
+                        href="https://github.com/Martogramer"
                         path={path}
                         display="inline-flex"
                         alignItems="center"
@@ -81,12 +81,10 @@ const Navbar = props => {
                         pl={2}
                     >
                         <IoLogoGithub />
-                    </LinkItem>
+                    </Link>
                 </Stack>
-
                 <Box flex={1} align="right">
                     <ThemeToggleButton />
-
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
                         <Menu isLazy id="navbar-menu">
                             <MenuButton
@@ -107,8 +105,9 @@ const Navbar = props => {
                                 </NextLink>
                                 <MenuItem
                                     as={Link}
-                                    href="https://github.com/"
-                                >
+                                    target="_blank"
+                                    href="https://github.com/Martogramer"
+                                >Github
                                 </MenuItem>
                             </MenuList>
                         </Menu>
