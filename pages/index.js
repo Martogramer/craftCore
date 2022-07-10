@@ -12,12 +12,14 @@ import {
     useColorModeValue,
     chakra
 } from '@chakra-ui/react'
+import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 const Page = () => {
     return (
+        <Layout>
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
                 Buenas, soy un full-stack developer based in Arg!
@@ -88,6 +90,7 @@ const Page = () => {
                 </BioSection>
             </Section>
         </Container>
+</Layout>
     )
 }
 export default Page
