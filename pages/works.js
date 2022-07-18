@@ -3,6 +3,11 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import thumbInkdrop from '../public/images/mobilegraf.png'
+import inmofrente from '../public/images/inmofrente.png'
+import byfree from '../public/images/dashboard.png'
+import mindmap from '../public/images/Mind_Map.jpg'
+
+
 const Works = () => (
     <Layout>
     <Container>
@@ -14,18 +19,17 @@ const Works = () => (
       
       <SimpleGrid columns={[1,1,2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
+          <WorkGridItem id="mindmap" title="mind map portfolio" thumbnail={mindmap}>
             Sarabara Sarabara mas sarabara lorem impsun y todo lo que se te ocurra, mas además también quizás y porqué.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            Sarabara Sarabara
+          <WorkGridItem id="byfree" title="by free collab development" thumbnail={byfree}>
+            plataforma de desarrollo colaborativo
           </WorkGridItem>
         </Section>
       </SimpleGrid>
-      
-      
+
       <Section delay={0.2}>
         <Divider my={6} />
         <Heading as="h3" fontSize={20} mb={4}>
@@ -35,8 +39,8 @@ const Works = () => (
 
       <SimpleGrid columns={[1,1,2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            Sarabara Sarabara mas sarabara lorem impsun y todo lo que se te ocurra, mas además también quizás y porqué.
+          <WorkGridItem id="bienesraices" title="bienesraices" thumbnail={inmofrente}>
+            App Bienes raíces php 
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
