@@ -9,7 +9,7 @@ const variants = {
 }
 
 const Layout = ({ children, title }) => {
-    const t = `${title} - por el autor`
+    const t = `${title} - @martogramer`
     return (
         <motion.article
             initial="hidden"
@@ -23,7 +23,6 @@ const Layout = ({ children, title }) => {
                 {title && (
                     <Head>
                         <title>{t}</title>
-                        
                     </Head>
                 )}
                 {children}

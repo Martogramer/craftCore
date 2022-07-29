@@ -35,10 +35,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/works.js"
     ],
-    "/works/inkdrop": [
+    "/works/martelli": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/works/inkdrop.js"
+      "static/chunks/pages/works/martelli.js"
+    ],
+    "/works/mindmap": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/works/mindmap.js"
     ]
   },
   "ampFirstPages": []
