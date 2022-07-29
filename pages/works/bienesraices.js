@@ -6,15 +6,14 @@ import Layout from '../../components/layouts/article'
 
 const Work =()=>{
     return(
-        <Layout title="bienesraices">
+        <Layout title="Real State Platform">
             <Container>
                 <Title>
-                    Bienes Raíces <Badge>2021</Badge>
+                    Real state services <Badge>2022</Badge>
                 </Title>
                 <P>
-                    un poco mas de sarabara para rellenar espacios. Bien tanteamos comod
-                    va quedando toda esta wea q me gusta loren ipsum y bueno esta aplicacion tmb le permite accederado
-                    como editor de contenido.
+                    Web app for real state agents where to publish properties for sale. 
+                    this project was built with sass n php sv
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
@@ -22,8 +21,8 @@ const Work =()=>{
                         <Link href="https://github.com/Martogramer">https://github.com/Martogramer  <ExternalLinkIcon /></Link>
                     </ListItem>
                     <ListItem>
-                        <Meta>Oderside</Meta>
-                        <span> Windows/mac0S/Linux/iOS/Android </span>
+                        <Meta>code</Meta>
+                        <span> github - </span><Link href="https://github.com/Martogramer">https://github.com/Martogramer  <ExternalLinkIcon /></Link>
                     </ListItem>
                     <ListItem>
                         <Meta>Stack</Meta>

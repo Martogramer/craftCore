@@ -8,7 +8,7 @@ import ImagenProvisoria from '../public/images/mobilegraf.png'
 const Posts = () => (
     <Layout title="Post">
         <Container>
-            <Heading as="h4" fontSize={20} mb={4}>
+            <Heading as="h4" fontSize={20} mt={3} mb={4}>
                 Posts
             </Heading>
             <Section delay={0.1}>

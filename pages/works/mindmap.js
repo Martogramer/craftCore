@@ -12,8 +12,7 @@ const Work =()=>{
                     mind map <Badge>2022</Badge>
                 </Title>
                 <P>
-                    un poco mas de sarabara para rellenar espacios. Bien tanteamos comod
-                    va quedando toda esta wea q me gusta
+                    Personal website. Route  of freelance projects carried out. Implement framer motion effects and consume random images API.
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>

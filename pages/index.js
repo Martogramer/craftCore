@@ -4,13 +4,9 @@ import {
     Container,
     Heading,
     Box,
-    SimpleGrid,
     Button,
-    List,
-    ListItem,
     Image,
     useColorModeValue,
-    chakra
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
@@ -21,13 +17,14 @@ const Page = () => {
     return (
         <Layout>
         <Container>
-            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                Buenas, soy un full-stack developer based in Arg!
+            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mt={6} mb={6} align="center">
+                Hi there! i am a full-stack developer based in Arg!
             </Box>
             <Box display={{ md: 'flex' }}>
                 <Box floxGrow={1}>
                     <Heading as="h2" variant="page-title">
-                        Aquí Tu Header Sakatuka !
+                        Martin Iribas,
+                        developer !
                     </Heading>
                     <p> Artesano Digital ( developer / designer / entrepeneur )</p>
                 </Box>
@@ -62,15 +59,14 @@ const Page = () => {
                     Work
                 </Heading>
                 <Paragraph>
-                    
-                    <NextLink href="/works/inkdrop" passHref scroll={false}>
-                        <Link>Inkdrop</Link>
+                    Currently collaborating on a freelance project that you can see here
+                    <NextLink href="/works/martelli" passHref scroll={false}>
+                        <Link> momentum</Link>
                     </NextLink>
-                    . He publishes content for marketing his products and his
-                    channel called 
+                    . Publish content in blog format to share programming knowledge in
                     <NextLink href="" passHref>
                         <Link target="_blank"> telescopiens</Link>
-                    </NextLink>
+                    </NextLink>. This portfolio was built with Next.
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/works" passHref scroll={false}>
@@ -87,6 +83,39 @@ const Page = () => {
                 <BioSection>
                     <BioYear>1995</BioYear>
                     Born in Santa Fe, Arg.
+                </BioSection>
+            </Section>
+            <Section delay={0.3}>
+                <BioSection>
+                    <BioYear>2013</BioYear>
+                    Graduate from high schol
+                </BioSection>
+            </Section>
+            <Section delay={0.5}>
+                <BioSection>
+                    <BioYear>2015</BioYear>
+                    Self-employed worker in areas sush as commerce and production, in charge of the public relations team, in sales and distribution.
+                </BioSection>
+            </Section>
+            <Section delay={0.7}>
+                <BioSection>
+                    <BioYear>2017</BioYear>
+                    I work in gastronomy. Gastronomic entrepeneurship.
+                </BioSection>
+            </Section>
+            <Section delay={0.8}>
+                <Heading as="h3" variant="section-title">
+                    study
+                </Heading>
+                <BioSection>
+                    <BioYear>2020</BioYear>
+                    Full Web Development Course.
+                </BioSection>
+            </Section>
+            <Section delay={0.8}>
+                <BioSection>
+                    <BioYear>2021</BioYear>
+                    Full Stack Web Developer in Henry.
                 </BioSection>
             </Section>
         </Container>

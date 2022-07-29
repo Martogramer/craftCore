@@ -2,5 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/works/inkdrop": "pages/works/inkdrop.js"
+  "/works": "pages/works.js",
+  "/works/martelli": "pages/works/martelli.js"
 }
